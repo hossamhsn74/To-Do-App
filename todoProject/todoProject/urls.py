@@ -21,4 +21,5 @@ from coreApp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage, name='home'),
+    path('add/', views.addTask, name='add'),
 ]

@@ -8,20 +8,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>homepage</title>
+    <title>To-Do</title>
 </head>
 
 <body>
 
     <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href={% url 'home' %}>TODO App</a>
+        <a class="navbar-brand" href={% url 'home' %}>To-Do App</a>
     </nav>
 
-    
-    {% block content %}
+    <div class="jumbotron">
+      <h3 class="display-4">Hello,</h3>
+      <hr class="my-4">
+      <pre>This is a simple To-Do App , you can start now!,
+        you can add, edit and delete notes as you wish.</pre>
 
-    {% endblock content %}
-    this is base test
+    </div>
+
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    
+
     <footer>
         <p>Copyright @ {% now "Y" %} Hossam Hassan</p>
     </footer>
