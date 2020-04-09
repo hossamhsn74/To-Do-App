@@ -1,4 +1,0 @@
-django
-pillow
-#db requirments
-psycopg2 for postgres
